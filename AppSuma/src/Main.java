@@ -4,21 +4,17 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        //declarar variabñes
-        int numeroEntero;
-        String cadenaCaractereres;
+        //Sumas
+        int a,b;
 
-        numeroEntero = 10;
-        cadenaCaractereres = "Hola mundo";
+        a=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de a"));
+        b=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el valor de b"));
+        System.out.println("la suma da: "+ (a+b) );
 
-        numeroEntero = Integer.parseInt(
-                JOptionPane.showInputDialog(null,"Ingresa un valor númerico entero")
-        );
+        double x,y;
 
-        cadenaCaractereres = JOptionPane.showInputDialog(null,"Ingresa un valor String");
-
-        System.out.println("El número de entero es: " + numeroEntero);
-        System.out.println("La cadena de caráctereres es: " + cadenaCaractereres);
-
+        x=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de x"));
+        y=Double.parseDouble(JOptionPane.showInputDialog("Ingrese el valor de y"));
+        System.out.println("la suma da: "+ (x+y) );
     }
 }
